@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>libezz</groupId>
-	<artifactId>topServer</artifactId>
+	<artifactId>top</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>topServer</name>
-	<description>TopServer project for Spring Boot</description>
+	<name>top</name>
+	<description>Top project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
