@@ -4,25 +4,30 @@
 <meta charset="UTF-8">
 <style type="text/css">
 body {text-align:center;}
-iframe {border:0;}
+iframe {border-width:0;}
 </style>
 <script type="text/javascript">
 window.onload = function() {
 	top.menu.location.href = "/html/menu.html";
 }
+window.onresize = function() {
+	adaptHeight(document.getElementById("menu"));
+	adaptHeight(document.getElementById("show"));
+	adaptHeight(document.getElementById("main"));
+}
 function adaptHeight(iframe) {
 	var textHeight = iframe.contentWindow.document.body.offsetHeight;
-	var seenHeight = window.innerHeight * 0.95;
+	var seenHeight = window.innerHeight * 0.9;
 	iframe.height = 0;
 	iframe.height = textHeight > seenHeight ? textHeight : seenHeight;
 }
 </script>
-<title>ZZzone</title>
+<title>蒹葭苍苍</title>
 <link rel="icon" href="/img/topServer.ico">
 </head>
 <body>
-<iframe name="menu" onload="adaptHeight(this)" style="width:20%;position:fixed;left:0;"></iframe>
-<iframe name="show" onload="adaptHeight(this)" style="width:20%;position:fixed;right:0;"></iframe>
-<iframe name="main" onload="adaptHeight(this)" style="width:60%;"></iframe>
+<iframe id="menu" name="menu" onload="adaptHeight(this)" style="width:20%;position:fixed;left:0;"></iframe>
+<iframe id="show" name="show" onload="adaptHeight(this)" style="width:20%;position:fixed;right:0;"></iframe>
+<iframe id="main" name="main" onload="adaptHeight(this)" style="width:60%;"></iframe>
 </body>
 </html>
