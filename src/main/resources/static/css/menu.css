@@ -1,1 +1,14 @@
 @charset "UTF-8";
+body {margin:0;}
+.top {max-width:100%;position:fixed;}
+#top-0 {clip:rect(0vw,33vw,33vw,0vw);transform-origin:16.5vw 16.5vw;}
+#top-1 {clip:rect(0vw,67vw,33vw,33vw);transform-origin:50vw 16.5vw;}
+#top-2 {clip:rect(0vw,100vw,33vw,67vw);transform-origin:83.5vw 16.5vw;}
+#top-3 {clip:rect(33vw,33vw,67vw,0vw);transform-origin:16.5vw 50vw;}
+#top-4 {clip:rect(33vw,67vw,67vw,33vw);transform-origin:50vw 50vw;}
+#top-5 {clip:rect(33vw,100vw,67vw,67vw);transform-origin:83.5vw 50vw;}
+#top-6 {clip:rect(67vw,33vw,100vw,0vw);transform-origin:16.5vw 83.5vw;}
+#top-7 {clip:rect(67vw,67vw,100vw,33vw);transform-origin:50vw 83.5vw;}
+#top-8 {clip:rect(67vw,100vw,100vw,67vw);transform-origin:83.5vw 83.5vw;}
+@keyframes turn {50% {transform:rotateX(90deg)} 100%{transform:rotateX(90deg)}}
+.turn {animation:turn 0.4s 2 alternate;}
